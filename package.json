@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "start": "next start",
-    "lint": "next lint",
+    "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "deploy": "next build && touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

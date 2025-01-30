@@ -4,7 +4,9 @@ const isLocal = process.env.NODE_ENV === 'development'; // Check if running loca
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: isLocal ? '' : undefined, // Set basePath only for local development
+  assetPrefix: './', // Add this line
+  basePath: isLocal ? '' : '/microsoft-tools', // Set basePath only for local development
+  trailingSlash: true, // Add this line
   images: {
     unoptimized: true,
   },
